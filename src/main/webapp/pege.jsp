@@ -35,7 +35,5 @@ att Value:<%=pageContext.findAttribute("attName")%> (which one?)<br>
 
 
 
-
-
 </body>
 </html>
