@@ -34,10 +34,28 @@
 
 <h2>get data from Array -->List -->map --using El code</h2>
 <ul>
-    <li>${fname["0"]}--->${lname["0"]}--->${company."Ellison"}</li>
+    <li>${fname["0"]}--->${lname["0"]}--->${company[lname["0"]]}</li>
     <li>${fname["1"]}--->${lname["1"]}--->${company[lname["1"]]}</li>
     <li>${fname["2"]}--->${lname["2"]}--->${company[lname["2"]]}</li>
 </ul>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<h2>use c:forEach to get from array</h2>
+<ul>
+    <c:forEach var="a" items="${fname}">
+        <li>${a}</li>
+    </c:forEach>
+</ul>
+<h2>use c:forEach to get from List</h2>
+<ul>
+    <c:forEach var="l" items="${lname}">
+        <li>${l}</li>
+    </c:forEach>
+</ul>
+<h2>use c:forEach to get from HashMap</h2>
+<ul>
+    <c:forEach var="c" items="${company}">
+        <li>${c.value}</li>
+    </c:forEach>
+</ul>
 </body>
 </html>
