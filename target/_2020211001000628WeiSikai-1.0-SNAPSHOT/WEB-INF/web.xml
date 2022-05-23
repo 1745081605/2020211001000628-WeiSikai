@@ -21,6 +21,16 @@
         <param-value>20020625</param-value>
     </context-param>
 
+    <filter>
+        <filter-name>LiuTengFilter</filter-name>
+        <filter-class>com.weisikai.lab2.WeiSikaiFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LiuTengFilter</filter-name>
+        <url-pattern>/lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
+
+
     <welcome-file-list>
         <welcome-file>home</welcome-file>
     </welcome-file-list>
