@@ -16,6 +16,7 @@ public class VisitCountServlet extends HttpServlet {
         n++;
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
+        out.println("<h1>Author:<span style=\"color: red\">2020211001000628-WeiSikai</span></h1>");
         out.println("<div style='text-align:center;'><h2>This Servlet Clicks Times</h2></div>");
         out.println("<div style='text-align:center;'><h4>"+n+"</h4></div>");
     }

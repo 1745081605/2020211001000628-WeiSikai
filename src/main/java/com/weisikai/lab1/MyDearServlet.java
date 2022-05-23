@@ -27,6 +27,7 @@ public class MyDearServlet extends HttpServlet {
                 "<title>MyDearServlet</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
+                "<h1>Author:<span style=\"color: red\">2020211001000628-WeiSikai</span></h1>"+
                 "    name:"+name+"<br/>\n" +
                 "    submit:"+submit+"<br/>\n"+
                 "    class:"+_class+"<br/>\n" +

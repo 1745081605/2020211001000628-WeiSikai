@@ -15,6 +15,7 @@ public class LifeCycleServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
+        System.out.println("Author:2020211001000628-WeiSikai");
         System.out.println("The LifeCycleServlet is init......");
         System.out.printf("-------------------------------");
     }
