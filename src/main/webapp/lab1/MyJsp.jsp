@@ -11,6 +11,7 @@
     <title>MyJsp.jsp</title>
 </head>
 <body>
+<h1>Author:<span style="color: red">2020211001000628-WeiSikai</span></h1>
 <span>I am MyJsp.jsp</span>
 <h2>The action is "MyDearServletURL"</h2>
 <form method="post"  action="../MyDearServletURL">
