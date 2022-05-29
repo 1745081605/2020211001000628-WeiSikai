@@ -23,7 +23,7 @@
 
     <filter>
         <filter-name>WeiSikaiFilter</filter-name>
-        <filter-class>com.lab2.lab2.WeiSikaiFilter</filter-class>
+        <filter-class>com.lab2.WeiSikaiFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>WeiSikaiFilter</filter-name>
