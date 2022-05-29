@@ -15,7 +15,7 @@
 <h1>Author:<span style="color: red">2020211001000628-WeiSikai</span></h1>
 <h2>Welcome,
     <%--todo 9 : use jsp:useBean to access the same instance of login bean from request scope--%>
-    <jsp:useBean id="user" class="com.weisikai.lab2.Login" scope="request"></jsp:useBean>
+    <jsp:useBean id="user" class="com.lab2.lab2.Login" scope="request"></jsp:useBean>
     <%--todo 10 : use jsp:getProperty to display username --%>
     <jsp:getProperty name="user" property="username"/>
 

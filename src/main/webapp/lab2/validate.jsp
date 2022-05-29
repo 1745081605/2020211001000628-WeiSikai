@@ -12,7 +12,7 @@
 </head>
 <body>
 <%--Todo 1: Use <jsp:useBean> to create a Login bean instance in request scope --%>
-<jsp:useBean id="user" class="com.weisikai.lab2.Login" scope="request"></jsp:useBean>
+<jsp:useBean id="user" class="com.lab2.lab2.Login" scope="request"></jsp:useBean>
 <%--Todo 2: Use <jsp:setProperty> to set  beans' property username and password--%>
 <jsp:setProperty name="user" property="username" value="${param.username}"/>
 <jsp:setProperty name="user" property="password" value="${param.password}"/>
