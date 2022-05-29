@@ -22,11 +22,11 @@
     </context-param>
 
     <filter>
-        <filter-name>LiuTengFilter</filter-name>
+        <filter-name>WeiSikaiFilter</filter-name>
         <filter-class>com.lab2.lab2.WeiSikaiFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>LiuTengFilter</filter-name>
+        <filter-name>WeiSikaiFilter</filter-name>
         <url-pattern>/lab2/welcome.jsp</url-pattern>
     </filter-mapping>
 
