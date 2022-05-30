@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: KAI
@@ -40,7 +41,7 @@
     //update 5 user basepath
 %>
 
-<form method="post" id="form" action="CalServlet">
+<form method="post" id="form" action="<c:url value="/lab3/CalServlet"/>">
     <table>
         <tr>
             <td >
