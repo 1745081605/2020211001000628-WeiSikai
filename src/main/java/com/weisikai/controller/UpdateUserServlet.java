@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -46,9 +47,14 @@ public class UpdateUserServlet extends HttpServlet {
         UserDao userDao=new UserDao();
         Connection con = (Connection) getServletContext().getAttribute("con");
         try {
-            userDao.updateUser(con,user);
-            req.setAttribute("message","update success");
-            req.getRequestDispatcher("WEB-INF/views/login.jsp").forward(req,resp);
+            int i = userDao.updateUser(con, user);
+            User updateUser=userDao.findById(con,Integer.parseInt(id));
+            HttpSession session=req.getSession();
+            session.removeAttribute("user");
+            session.setAttribute("user",updateUser);
+//            req.getRequestDispatcher("WEB-INF/views/login.jsp").forward(req,resp);
+            req.getRequestDispatcher("accountDetails").forward(req,resp);
+
         } catch (SQLException e) {
             req.setAttribute("message","update fail");
             e.printStackTrace();
