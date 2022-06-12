@@ -78,14 +78,12 @@
 		addMapControl();
 		addMarker();
 	}
-	//鍒涘缓鍦板浘鍑芥暟锛?
 	function createMap(){
 		var map = new BMap.Map("dituContent");
 		var point = new BMap.Point(115.876018,28.749703);
 		map.centerAndZoom(point,17);
 		window.map = map;
 	}
-	//鍦板浘浜嬩欢璁剧疆鍑芥暟锛?
 	function setMapEvent(){
 		map.enableDragging();
 		map.enableScrollWheelZoom();
